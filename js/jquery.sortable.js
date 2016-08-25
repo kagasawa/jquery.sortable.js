@@ -66,7 +66,7 @@
 
         // KEY配列だけ収集
         $.each(trs, function (key){
-            var $tr = $(this).find('td').eq(index);
+            var $tr = $(this).children().eq(index);
             var sort;
             if ( isAttr ) {
                 sort = $tr.attr('sort-value');
